@@ -1,0 +1,9 @@
+[project]
+name = "pdf-lab-anonymizer"
+version = "0.1.0"
+description = "Profile-based true redaction/anonymization for laboratory PDF reports"
+requires-python = ">=3.10"
+dependencies = ["PyMuPDF"]
+
+[project.scripts]
+anonymize-pdf = "pdf_lab_anonymizer.cli:main"
