@@ -33,6 +33,7 @@ dbdiagnosticos
 ipc
 klett
 dasa
+mena
 ```
 
 Each profile defines its own redaction strategy using combinations of:
@@ -64,6 +65,7 @@ pdf-lab-anonymizer/
       ipc.py
       klett.py
       dasa.py
+      mena.py
 
   scripts/
     anonymize-pdf
@@ -74,6 +76,7 @@ pdf-lab-anonymizer/
     anonymize-pdf-ipc
     anonymize-pdf-klett
     anonymize-pdf-dasa
+    anonymize-pdf-mena
 ```
 
 ## Installation
@@ -139,6 +142,7 @@ Convenience wrappers are also available:
 ./scripts/anonymize-pdf-ipc input.pdf output.pdf --patient-alias "Paciente A"
 ./scripts/anonymize-pdf-claudino input.pdf output.pdf --patient-alias "Paciente A"
 ./scripts/anonymize-pdf-hermes-pardini input.pdf output.pdf --patient-alias "Paciente A"
+./scripts/anonymize-pdf-mena input.pdf output.pdf --patient-alias "Paciente A"
 ```
 
 ## Useful options
