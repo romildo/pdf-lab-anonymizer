@@ -7,3 +7,8 @@ dependencies = ["PyMuPDF"]
 
 [project.scripts]
 anonymize-pdf = "pdf_lab_anonymizer.cli:main"
+
+[project.optional-dependencies]
+test = [
+    "pytest>=8",
+]
