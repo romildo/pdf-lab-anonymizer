@@ -14,6 +14,8 @@ PROFILES = {
     "dbdiagnosticos": "pdf_lab_anonymizer.profiles.dbdiagnosticos",
     "db-diagnosticos": "pdf_lab_anonymizer.profiles.dbdiagnosticos",
     "ipc": "pdf_lab_anonymizer.profiles.ipc",
+    "klett": "pdf_lab_anonymizer.profiles.klett",
+    "dasa": "pdf_lab_anonymizer.profiles.dasa",
 }
 
 

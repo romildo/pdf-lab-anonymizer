@@ -109,9 +109,14 @@ def parse_page_selector(selector: Optional[str], page_count: int) -> set[int]:
         if "-" in part:
             left, right = part.split("-", 1)
             start = int(left) if left else 1
-            end = int(right) if right else page_count
-            if start < 1 or end < start:
+            open_ended = right == ""
+            end = page_count if open_ended else int(right)
+            if start < 1 or (end < start and not open_ended):
                 raise ValueError(f"invalid page range: {part!r}")
+            # Open-ended continuation ranges such as "2-" are valid even for
+            # single-page PDFs. In that case they simply select no pages.
+            if end < start:
+                continue
             for page_no in range(start, min(end, page_count) + 1):
                 selected.add(page_no - 1)
         else:
