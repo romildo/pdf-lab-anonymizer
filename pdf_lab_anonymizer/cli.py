@@ -16,6 +16,7 @@ PROFILES = {
     "ipc": "pdf_lab_anonymizer.profiles.ipc",
     "klett": "pdf_lab_anonymizer.profiles.klett",
     "dasa": "pdf_lab_anonymizer.profiles.dasa",
+    "mena": "pdf_lab_anonymizer.profiles.mena",
 }
 
 
