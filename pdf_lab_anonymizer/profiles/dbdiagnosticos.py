@@ -5,7 +5,7 @@ DESCRIPTION = 'Layout DBDiagnosticos.'
 DEFAULTS = {'line_y_tolerance': 3.0}
 
 FIELD_RULES = [{'description': 'Substituir nome do paciente na primeira pagina',
-  'rect': [64.0, 78.5, 185.0, 92.0],
+  'rect': [64.0, 78.5, 330.0, 92.0],
   'replacement': 'Paciente A',
   'preserve_style': True,
   'fontname': 'helv',
@@ -49,7 +49,7 @@ GRAPHIC_AREA_RULES = [{'description': 'Remover QR code sem afetar texto',
   'fill': (1, 1, 1),
   'enabled': True},
  {'description': 'Remover codigo de barras sem afetar texto',
-  'rect': [470.0, 78.0, 558.0, 112.0],
+  'rect': [470.0, 78.0, 558.0, 103.5],
   'pages': 'all',
   'fill': (1, 1, 1),
   'enabled': True}]
