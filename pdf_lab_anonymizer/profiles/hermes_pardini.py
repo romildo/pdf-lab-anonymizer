@@ -9,7 +9,7 @@ FIELD_RULES = []
 GRAPHIC_AREA_RULES = []
 
 AREA_RULES = [{'description': 'Replace patient name field',
-  'rect': [51, 107, 270, 122],
+  'rect': [51, 107, 410, 122],
   'replacement': 'Paciente A',
   'preserve_style': True,
   'fontname': 'cobo',
